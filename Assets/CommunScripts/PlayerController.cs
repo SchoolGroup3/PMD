@@ -1,8 +1,11 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance;
+    
     [Header("Movement Settings")]
     public float speed = 5f;
     public float dashForce = 15f;
@@ -15,14 +18,41 @@ public class PlayerController : MonoBehaviour
     
     [Header("Death Settings")]
     public Transform respawnPoint;
+
+    [Header("Appearance Settings")]
+    public Sprite playerSprite; 
     
     private Rigidbody2D rb;
     private bool canDash = true;
     private bool isDashing = false;
     private Vector3 initialPosition;
+    private SpriteRenderer spriteRenderer; 
 
-    void Start()
+    void Awake()
     {
+        // Delete duplicate players
+        PlayerController[] existingPlayers = FindObjectsOfType<PlayerController>();
+        foreach (PlayerController player in existingPlayers)
+        {
+            if (player != this) 
+            {
+                Destroy(player.gameObject);
+            }
+        }
+
+        // Singleton
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         rb = GetComponent<Rigidbody2D>();
         if (rb != null)
         {
@@ -30,6 +60,28 @@ public class PlayerController : MonoBehaviour
             rb.freezeRotation = true;
         }
         initialPosition = transform.position;
+
+        // Configure the sprite
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null && playerSprite != null)
+        {
+            spriteRenderer.sprite = playerSprite;
+        }
+    }
+    
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        FindRespawnPointInNewScene();
+    }
+    
+    void FindRespawnPointInNewScene()
+    {
+        GameObject respawnObject = GameObject.FindGameObjectWithTag("Respawn");
+        if (respawnObject != null)
+        {
+            respawnPoint = respawnObject.transform;
+            transform.position = respawnPoint.position;
+        }
     }
     
     void Update()
@@ -110,7 +162,7 @@ public class PlayerController : MonoBehaviour
     
     private void Die()
     {
-        Debug.Log("�Player dead!");
+        Debug.Log("Player died!");
 
         DeathCounter.Instance?.IncrementDeaths();
         
@@ -127,5 +179,10 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = Vector2.zero;
         }
+    }
+    
+    void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
