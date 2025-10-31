@@ -110,7 +110,9 @@ public class PlayerController : MonoBehaviour
     
     private void Die()
     {
-        Debug.Log("�Player ha muerto!");
+        Debug.Log("�Player dead!");
+
+        DeathCounter.Instance?.IncrementDeaths();
         
         if (respawnPoint != null)
         {
