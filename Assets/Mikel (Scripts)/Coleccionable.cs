@@ -15,6 +15,8 @@ public class Coleccionable : MonoBehaviour
                 controlador.IncrementarColeccionables();
             }
 
+            LevelManager.Instance?.CollectItem();
+
             GetComponent<Collider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
 
