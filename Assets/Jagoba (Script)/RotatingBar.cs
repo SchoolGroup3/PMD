@@ -8,6 +8,6 @@ public class RotatingBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.RotateAround(this.transform.parent.gameObject.transform.position, Vector3.up, 20 * Time.deltaTime);
+        transform.RotateAround(this.transform.parent.gameObject.transform.position, new Vector3(0, 0, 1), 90 * Time.deltaTime);
     }
 }
