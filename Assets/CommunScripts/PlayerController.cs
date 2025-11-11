@@ -26,12 +26,16 @@ public class PlayerController : MonoBehaviour
     private bool canDash = true;
     private bool isDashing = false;
     private Vector3 initialPosition;
-    private SpriteRenderer spriteRenderer; 
+    private SpriteRenderer spriteRenderer;
+    float moveHorizontal;
+    float moveVertical;
+    private Animator animator;
 
     void Awake()
     {
         // Delete duplicate players
         PlayerController[] existingPlayers = FindObjectsOfType<PlayerController>();
+        animator= this.GetComponent<Animator>();
         foreach (PlayerController player in existingPlayers)
         {
             if (player != this) 
@@ -88,11 +92,45 @@ public class PlayerController : MonoBehaviour
     {
         if (!isDashing)
         {
-            float moveHorizontal = Input.GetAxis("Horizontal") * speed;
-            float moveVertical = Input.GetAxis("Vertical") * speed;
+            moveHorizontal = Input.GetAxis("Horizontal") * speed;
+            moveVertical = Input.GetAxis("Vertical") * speed;
             rb.linearVelocity = new Vector2(moveHorizontal, moveVertical);
+
         }
-        
+        if(moveHorizontal > 0) {
+            animator.SetBool("Walk_right", true);
+        }
+        else
+        {
+            animator.SetBool("Walk_right", false);
+
+        }
+        if (moveHorizontal < 0)
+        {
+            animator.SetBool("Walk_left", true);
+        }
+        else
+        {
+            animator.SetBool("Walk_left", false);
+
+        }
+        if (moveVertical > 0)
+        {
+            animator.SetBool("Walk_up", true);
+        }
+        else
+        {
+            animator.SetBool("Walk_up", false);
+        }
+        if (moveVertical < 0)
+        {
+            animator.SetBool("Walk_down", true);
+        }
+        else
+        {
+            animator.SetBool("Walk_down", false);
+        }
+
         if (Input.GetKeyDown(KeyCode.Space) && canDash && !isDashing)
         {
             StartCoroutine(PerformDash());
