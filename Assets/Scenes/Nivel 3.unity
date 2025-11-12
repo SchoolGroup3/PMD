@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 1.5, y: -3.5, z: 0}
   puntoAbajo: {x: 1.5, y: 3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &38375177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,7 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5c5e4483e0995d4786d1be6ab4c3353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiresAllCollectibles: 1
+  requiresAllCollectibles: 0
 --- !u!1 &113931075
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,7 +626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -0.5, y: -3.5, z: 0}
   puntoAbajo: {x: -0.5, y: 3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &152614679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -949,7 +949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 7.5, y: -3.5, z: 0}
   puntoAbajo: {x: 7.5, y: 3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &260882516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1331,7 +1331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -3.5, y: 3.5, z: 0}
   puntoAbajo: {x: -3.5, y: -3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &280926212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1713,7 +1713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 2.5, y: 3.5, z: 0}
   puntoAbajo: {x: 2.5, y: -3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &378909990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4593,7 +4593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -8.5, y: -3.5, z: 0}
   puntoAbajo: {x: -8.5, y: 3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &496928581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4625,7 +4625,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496928579}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -4916,7 +4916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -4.5, y: -3.5, z: 0}
   puntoAbajo: {x: -4.5, y: 3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &626541821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5105,7 +5105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 4.5, y: 3.5, z: 0}
   puntoAbajo: {x: 4.5, y: -3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &700232564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5680,7 +5680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -1.5, y: 3.5, z: 0}
   puntoAbajo: {x: -1.5, y: -3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &817563233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5869,7 +5869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 8.5, y: 3.5, z: 0}
   puntoAbajo: {x: 8.5, y: -3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &1033875545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5901,7 +5901,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033875543}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -6388,7 +6388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -2.5, y: -3.5, z: 0}
   puntoAbajo: {x: -2.5, y: 3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &1103276619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6577,7 +6577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 5.5, y: -3.5, z: 0}
   puntoAbajo: {x: 5.5, y: 3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &1130874356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6766,7 +6766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 6.5, y: 3.5, z: 0}
   puntoAbajo: {x: 6.5, y: -3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &1131634137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7176,7 +7176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -7.5, y: 3.5, z: 0}
   puntoAbajo: {x: -7.5, y: -3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &1252131977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7365,7 +7365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -5.5, y: 3.5, z: 0}
   puntoAbajo: {x: -5.5, y: -3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &1303984115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7554,7 +7554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 0.5, y: 3.5, z: 0}
   puntoAbajo: {x: 0.5, y: -3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &1806584946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7743,7 +7743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -6.5, y: -3.5, z: 0}
   puntoAbajo: {x: -6.5, y: 3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &1817229707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8331,7 +8331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 3.5, y: -3.5, z: 0}
   puntoAbajo: {x: 3.5, y: 3.5, z: 0}
-  velocidad: 7
+  velocidad: 0
 --- !u!114 &2019587121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8677,6 +8677,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2041748936
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3564571500178306024, guid: ef7cd65cb0a50c243ab2cb83cc1cb603, type: 3}
+      propertyPath: m_Name
+      value: Musica
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336056621915543744, guid: ef7cd65cb0a50c243ab2cb83cc1cb603, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.4593505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336056621915543744, guid: ef7cd65cb0a50c243ab2cb83cc1cb603, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.8008635
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336056621915543744, guid: ef7cd65cb0a50c243ab2cb83cc1cb603, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.017008293
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336056621915543744, guid: ef7cd65cb0a50c243ab2cb83cc1cb603, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336056621915543744, guid: ef7cd65cb0a50c243ab2cb83cc1cb603, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336056621915543744, guid: ef7cd65cb0a50c243ab2cb83cc1cb603, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336056621915543744, guid: ef7cd65cb0a50c243ab2cb83cc1cb603, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336056621915543744, guid: ef7cd65cb0a50c243ab2cb83cc1cb603, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336056621915543744, guid: ef7cd65cb0a50c243ab2cb83cc1cb603, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336056621915543744, guid: ef7cd65cb0a50c243ab2cb83cc1cb603, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ef7cd65cb0a50c243ab2cb83cc1cb603, type: 3}
 --- !u!1 &2137802601
 GameObject:
   m_ObjectHideFlags: 0
@@ -8850,3 +8907,4 @@ SceneRoots:
   - {fileID: 715578509}
   - {fileID: 2029586417}
   - {fileID: 1942896328}
+  - {fileID: 2041748936}
