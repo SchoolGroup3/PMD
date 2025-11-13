@@ -49,8 +49,10 @@ public class PauseManager : MonoBehaviour
         SceneManager.LoadScene("Menu");
         MenuPausa.SetActive(false);
         //Destroy(MenuPausa);
-        Destroy(Canvas_HUD);
-        Destroy(gameObject1);
+        //Destroy(Canvas_HUD);
+        Canvas_HUD.SetActive(false);
+        //Destroy(gameObject1);
+        gameObject1.SetActive(false);
         Time.timeScale = 1f;
 
     }

@@ -22,7 +22,6 @@ public class LevelManager : MonoBehaviour
             DontDestroyOnLoad(PauseManager);
             DontDestroyOnLoad(Canvas_HUD);
 
-
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
@@ -52,8 +51,8 @@ public class LevelManager : MonoBehaviour
     
     void CountCollectibles()
     {
-        // Contar todos los objetos Coleccionable en la escena
-        Coleccionable[] collectibles = FindObjectsOfType<Coleccionable>();
+        // Contar todos los objetos Coleccionable en la escena (sin ordenar)
+        Coleccionable[] collectibles = Object.FindObjectsByType<Coleccionable>(FindObjectsSortMode.None);
         totalCollectibles = collectibles.Length;
         Debug.Log($"Coleccionables en nivel: {totalCollectibles}");
     }
