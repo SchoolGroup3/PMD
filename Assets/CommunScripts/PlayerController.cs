@@ -26,12 +26,18 @@ public class PlayerController : MonoBehaviour
     private bool canDash = true;
     private bool isDashing = false;
     private Vector3 initialPosition;
-    private SpriteRenderer spriteRenderer; 
+    private SpriteRenderer spriteRenderer;
+    float moveHorizontal;
+    float moveVertical;
+    private Animator animator;
+    [SerializeField] private AudioClip andarSFX;
+    [SerializeField] private AudioClip MorirSFX;
 
     void Awake()
     {
         // Delete duplicate players
         PlayerController[] existingPlayers = FindObjectsOfType<PlayerController>();
+        animator= this.GetComponent<Animator>();
         foreach (PlayerController player in existingPlayers)
         {
             if (player != this) 
@@ -88,16 +94,59 @@ public class PlayerController : MonoBehaviour
     {
         if (!isDashing)
         {
-            float moveHorizontal = Input.GetAxis("Horizontal") * speed;
-            float moveVertical = Input.GetAxis("Vertical") * speed;
+            moveHorizontal = Input.GetAxis("Horizontal") * speed;
+            moveVertical = Input.GetAxis("Vertical") * speed;
             rb.linearVelocity = new Vector2(moveHorizontal, moveVertical);
+
         }
-        
+        if(moveHorizontal > 0) {
+            animator.SetBool("Walk_right", true);
+            ControladorSFX.instance.EjecutarSonido(andarSFX);
+        }
+        else
+        {
+            animator.SetBool("Walk_right", false);
+            ControladorSFX.instance.PararSonido();
+
+        }
+        if (moveHorizontal < 0)
+        {
+            animator.SetBool("Walk_left", true);
+            ControladorSFX.instance.EjecutarSonido(andarSFX);
+        }
+        else
+        {
+            animator.SetBool("Walk_left", false);
+            ControladorSFX.instance.PararSonido();
+
+        }
+        if (moveVertical > 0)
+        {
+            animator.SetBool("Walk_up", true);
+            ControladorSFX.instance.EjecutarSonido(andarSFX);
+        }
+        else
+        {
+            animator.SetBool("Walk_up", false);
+            ControladorSFX.instance.PararSonido();
+        }
+        if (moveVertical < 0)
+        {
+            animator.SetBool("Walk_down", true);
+            ControladorSFX.instance.EjecutarSonido(andarSFX);
+        }
+        else
+        {
+            animator.SetBool("Walk_down", false);
+            ControladorSFX.instance.PararSonido();
+        }
+
         if (Input.GetKeyDown(KeyCode.Space) && canDash && !isDashing)
         {
             StartCoroutine(PerformDash());
         }
     }
+
     
     void FixedUpdate()
     {
@@ -163,7 +212,7 @@ public class PlayerController : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player died!");
-
+        ControladorSFX.instance.EjecutarSonido(MorirSFX);
         DeathCounter.Instance?.IncrementDeaths();
         
         if (respawnPoint != null)
