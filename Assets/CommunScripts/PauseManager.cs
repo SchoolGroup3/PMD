@@ -1,14 +1,16 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
     public GameObject MenuPausa;
-    public GameObject Canvas_HUD; // referencia al Canvas del menú de pausa
+    public GameObject Canvas_HUD; 
     private bool isPaused = false;
+    public GameObject gameObject1;
+
 
     void Update()
     {
-        // Si el jugador pulsa Escape, alternamos pausa
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             TogglePause();
@@ -29,18 +31,28 @@ public class PauseManager : MonoBehaviour
 
     public void PauseGame()
     {
-        MenuPausa.SetActive(true); // muestra el menú
-        Time.timeScale = 0f;         // detiene el tiempo
+        MenuPausa.SetActive(true);
+        Time.timeScale = 0f;         
         isPaused = true;
         Canvas_HUD.SetActive(false);
     }
 
     public void ResumeGame()
     {
-        MenuPausa.SetActive(false); // oculta el menú
-        Time.timeScale = 1f;          // reanuda el tiempo
+        MenuPausa.SetActive(false); 
+        Time.timeScale = 1f; 
         isPaused = false;
         Canvas_HUD.SetActive(true);
+    }
+    public void volverMenu()
+    {
+        SceneManager.LoadScene("Menu");
+        MenuPausa.SetActive(false);
+        //Destroy(MenuPausa);
+        Destroy(Canvas_HUD);
+        Destroy(gameObject1);
+        Time.timeScale = 1f;
+
     }
 
     public void QuitGame()

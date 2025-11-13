@@ -10,7 +10,8 @@ public class Opcionesscript : MonoBehaviour
 {
     public GameObject MenuOpciones;
     public GameObject Mainmenu;
-    public GameObject menupausa;
+    public GameObject gameobject;
+
 
     public void OpenOptionPanel(){
         Mainmenu.SetActive(false);
@@ -33,5 +34,9 @@ public class Opcionesscript : MonoBehaviour
 
     public void PlayGame(){
         SceneManager.LoadScene("Nivel 1");
+        Instantiate(gameobject, new Vector3((float)-11.04, (float)4.42, 0), Quaternion.identity);
+
+
     }
+    
 }

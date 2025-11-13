@@ -5,23 +5,32 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
     
-    // ✅ AÑADE estas variables
     private int totalCollectibles = 0;
     private int collectedCount = 0;
     private bool allCollectiblesCollected = false;
-    
+    public GameObject MenuPausa;
+    public GameObject PauseManager;
+    public GameObject Canvas_HUD;
+
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(MenuPausa);
+            DontDestroyOnLoad(PauseManager);
+            DontDestroyOnLoad(Canvas_HUD);
+
 
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
             Destroy(gameObject);
+            Destroy(MenuPausa);
+            Destroy(PauseManager);
+            Destroy(Canvas_HUD);
         }
     }
     
