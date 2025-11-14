@@ -248,7 +248,7 @@ Transform:
   m_GameObject: {fileID: 100603134}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.1011, y: 0.16, z: 0}
+  m_LocalPosition: {x: 7.1011, y: 3.41, z: 0}
   m_LocalScale: {x: 0.86674064, y: 0.9734, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5c5e4483e0995d4786d1be6ab4c3353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiresAllCollectibles: 0
+  requiresAllCollectibles: 1
 --- !u!1 &113931075
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 4.5, y: 3.5, z: 0}
   puntoAbajo: {x: 4.5, y: -3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!114 &134723099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1249,7 +1249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -4.5, y: -3.5, z: 0}
   puntoAbajo: {x: -4.5, y: 3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!1 &391734297
 GameObject:
   m_ObjectHideFlags: 0
@@ -4303,7 +4303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 1.5, y: -3.5, z: 0}
   puntoAbajo: {x: 1.5, y: 3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!1 &597304582
 GameObject:
   m_ObjectHideFlags: 0
@@ -4630,7 +4630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 6.5, y: 3.5, z: 0}
   puntoAbajo: {x: 6.5, y: -3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!114 &685183346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4805,7 +4805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -6.5, y: -3.5, z: 0}
   puntoAbajo: {x: -6.5, y: 3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!1 &1044450587
 GameObject:
   m_ObjectHideFlags: 0
@@ -5105,7 +5105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 3.5, y: -3.5, z: 0}
   puntoAbajo: {x: 3.5, y: 3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!1 &1103237151
 GameObject:
   m_ObjectHideFlags: 0
@@ -5519,7 +5519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 0.5, y: 3.5, z: 0}
   puntoAbajo: {x: 0.5, y: -3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!114 &1210699700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5816,7 +5816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -5.5, y: 3.5, z: 0}
   puntoAbajo: {x: -5.5, y: -3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!114 &1375815114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6155,7 +6155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -1.5, y: 3.5, z: 0}
   puntoAbajo: {x: -1.5, y: -3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!114 &1491465155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6318,7 +6318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -3.5, y: 3.5, z: 0}
   puntoAbajo: {x: -3.5, y: -3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!114 &1835485623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6657,7 +6657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 2.5, y: 3.5, z: 0}
   puntoAbajo: {x: 2.5, y: -3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!114 &1910095880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7185,7 +7185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -2.5, y: -3.5, z: 0}
   puntoAbajo: {x: -2.5, y: 3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!1 &1942896326
 GameObject:
   m_ObjectHideFlags: 0
@@ -7394,7 +7394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 5.5, y: -3.5, z: 0}
   puntoAbajo: {x: 5.5, y: 3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!1 &1986132165
 GameObject:
   m_ObjectHideFlags: 0
@@ -7422,7 +7422,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986132165}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -7557,7 +7557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -8.5, y: -3.5, z: 0}
   puntoAbajo: {x: -8.5, y: 3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!1 &2024644918
 GameObject:
   m_ObjectHideFlags: 0
@@ -7961,7 +7961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: 7.5, y: -3.5, z: 0}
   puntoAbajo: {x: 7.5, y: 3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!1 &2122996983
 GameObject:
   m_ObjectHideFlags: 0
@@ -8112,7 +8112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -7.5, y: 3.5, z: 0}
   puntoAbajo: {x: -7.5, y: -3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!114 &2122996988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8287,7 +8287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntoArriba: {x: -0.5, y: -3.5, z: 0}
   puntoAbajo: {x: -0.5, y: 3.5, z: 0}
-  velocidad: 0
+  velocidad: 4
 --- !u!1 &2137802601
 GameObject:
   m_ObjectHideFlags: 0
