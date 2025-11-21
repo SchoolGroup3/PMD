@@ -183,3 +183,10 @@ MonoBehaviour:
   resistanceForce: 0
   respawnPoint: {fileID: 0}
   playerSprite: {fileID: 0}
+  rightButton: {fileID: 0}
+  leftButton: {fileID: 0}
+  upButton: {fileID: 0}
+  downButton: {fileID: 0}
+  dashButton: {fileID: 0}
+  andarSFX: {fileID: 8300000, guid: 224d6bf43df065d4ba15f997e8460779, type: 3}
+  MorirSFX: {fileID: 8300000, guid: 5a2dd7eff945c8346a1c22f71d0a6446, type: 3}
