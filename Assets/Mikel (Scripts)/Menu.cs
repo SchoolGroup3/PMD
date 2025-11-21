@@ -35,6 +35,7 @@ public class Opcionesscript : MonoBehaviour
     public void PlayGame(){
         SceneManager.LoadScene("Nivel 1");
         Instantiate(gameobject, new Vector3((float)-11.04, (float)4.42, 0), Quaternion.identity);
+        //gameObject.SetActive(true);
 
 
     }
